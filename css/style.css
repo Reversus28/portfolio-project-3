@@ -123,19 +123,22 @@ p {
   border-bottom: 1px solid #d8e3fe;
 }
 
-.header-page .container {
+.header-page .container,
+.footer .footer-head {
   display: flex;
   align-items: center;
 }
 
-.header-page .logo {
+.header-page .logo,
+.footer .logo {
   margin-right: 73px;
   width: 26px;
   height: 26px;
   fill: #5e81fe;
 }
 
-.header-page .nav-list {
+.header-page .nav-list,
+.footer .nav-list {
   display: flex;
 
   font-family: "Quicksand", sans-serif;
@@ -149,7 +152,8 @@ p {
   text-shadow: 0px 0px 5px #e6e6e6;
 }
 
-.header-page .nav-item:not(:last-child) {
+.header-page .nav-item:not(:last-child),
+.footer .nav-item:not(:last-child) {
   margin-right: 42px;
 }
 
@@ -164,28 +168,34 @@ p {
   color: #5e81fe;
 }
 
-.header-page .social-list {
+.header-page .social-list,
+.footer .social-list {
   display: flex;
   align-items: center;
   margin-left: auto;
   margin-right: 44px;
 }
 
-.header-page .social-item:not(:last-child) {
+.header-page .social-item:not(:last-child),
+.footer .social-item:not(:last-child) {
   margin-right: 35px;
 }
 
-.header-page .social-link {
+.header-page .social-link,
+.footer .social-link {
   display: block;
   color: #b6bac7;
 }
 
 .header-page .social-link:hover,
-.header-page .social-link:focus {
+.header-page .social-link:focus,
+.footer .social-link:hover,
+.footer .social-link:focus {
   color: var(--accent-color);
 }
 
-.header-page .social-icon {
+.header-page .social-icon,
+.footer .social-icon {
   fill: currentColor;
 }
 
@@ -423,3 +433,71 @@ p {
 }
 
 /* =============== END ABOUT US =============== */
+
+/* =============== FOOTER =============== */
+.footer .container {
+  display: block;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.footer-head {
+  margin-bottom: 28px;
+}
+
+.footer .copy {
+  margin-left: 100px;
+
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  color: #aeb8d0;
+}
+/* =============== END FOOTER =============== */
+
+/* =============== STATS =============== */
+
+.stats-list {
+  display: flex;
+  align-items: center;
+}
+
+.stats-list .stats-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 66px;
+  padding-bottom: 66px;
+}
+
+.stats-list .stats-item:nth-child(odd) {
+  align-items: flex-end;
+  padding-right: 90px;
+
+  text-align: right;
+  color: #ffffff;
+  background-image: linear-gradient(229.32deg, #6888ff 12.77%, #5e80ff 73.11%);
+}
+
+.stats-list .stats-item:nth-child(even) {
+  padding-left: 90px;
+
+  text-align: left;
+  color: #5e80ff;
+  background-image: linear-gradient(101.48deg, #e9efff 41.56%, #e0e9ff 81.53%);
+}
+
+.stats-item .number {
+  margin-top: 24px;
+  font-size: 48px;
+  line-height: 1.7;
+}
+
+.stats-item .stats-description {
+  max-width: 260px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.3;
+}
+/* =============== END STATS =============== */
